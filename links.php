@@ -24,13 +24,13 @@
 		<div class="col-md-12">
 			<ul class="nav">
 				<li class="nav-item">
-					<a class="nav-link active" href="./index.html">Home</a>
+					<a class="nav-link active" href="./index.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./servers.html">Servers</a>
+					<a class="nav-link" href="./servers.php">Servers</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./links.html">Links</a>
+					<a class="nav-link" href="./links.php">Links</a>
 				</li>
 			</ul>
 
