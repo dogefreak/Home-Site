@@ -1,5 +1,4 @@
 <?php
-echo "Hello World? This is a test!";
 ?>
 
 <!DOCTYPE html>
