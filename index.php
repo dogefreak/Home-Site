@@ -24,13 +24,13 @@
 		<div class="col-md-12">
 			<ul class="nav">
 				<li class="nav-item">
-					<a class="nav-link active" href="./index.html">Home</a>
+					<a class="nav-link active" href="./index.php">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./servers.html">Servers</a>
+					<a class="nav-link" href="./servers.php">Servers</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./links.html">Links</a>
+					<a class="nav-link" href="./links.php">Links</a>
 				</li>
 			</ul>
 			<div class="jumbotron">
@@ -41,7 +41,7 @@
 					This homepage is a nice wrapper for our local intranet, which we call the "Infra" net. Please click the following link for more information on the servers that are currently running. For more information please contact the system administrator (Floris Heije).
 				</p>
 				<p>
-					<a class="btn btn-primary btn-large" href="./servers.html">Servers</a>
+					<a class="btn btn-primary btn-large" href="./servers.php">Servers</a>
 				</p>
 			</div>
 			<div class="row">
