@@ -1,9 +1,13 @@
 <?php
-class index{
-	function index{
+
+class index
+{
+	function index()
+	{
 		echo("Hello world! this is a test");
 	}
 }
+
 index();
 ?>
 
