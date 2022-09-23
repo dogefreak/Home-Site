@@ -1,4 +1,15 @@
 <?php
+
+class links
+{
+	function links()
+	{
+
+	}
+}
+
+echo("Hello world! this is a test");
+
 ?>
 
 <!DOCTYPE html>
