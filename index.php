@@ -1,7 +1,10 @@
 <?php
 class index{
-	echo("Hello world! this is a test");
+	function index{
+		echo("Hello world! this is a test");
+	}
 }
+index();
 ?>
 
 <!DOCTYPE html>
