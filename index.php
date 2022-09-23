@@ -4,11 +4,12 @@ class index
 {
 	function index()
 	{
-		echo("Hello world! this is a test");
+
 	}
 }
 
-index();
+echo("Hello world! this is a test");
+
 ?>
 
 <!DOCTYPE html>
