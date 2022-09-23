@@ -1,5 +1,7 @@
 <?php
-echo("Hello world! this is a test");
+class index{
+	echo("Hello world! this is a test");
+}
 ?>
 
 <!DOCTYPE html>
