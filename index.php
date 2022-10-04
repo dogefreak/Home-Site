@@ -8,7 +8,7 @@ class index
 	}
 }
 
-echo("Hello Erik");
+echo("Hello Erik, hier ben ik");
 
 ?>
 
