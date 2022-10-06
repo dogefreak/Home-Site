@@ -215,7 +215,6 @@ class servers
 							ELKstack Server
 						</td>
 					</tr>
-					</tr>
 					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='';">
 						<td>
 							sec-01
