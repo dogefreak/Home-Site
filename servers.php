@@ -8,28 +8,6 @@ class servers
 	}
 }
 
-echo("Hello world! this is a test");
-
-// Must be run as root
-$arp_scan = shell_exec('arp-scan --interface=eth0 --localnet');
-
-$arp_scan = explode("\n", $arp_scan);
-
-$matches;
-
-foreach($arp_scan as $scan) {
-	
-	$matches = array();
-	
-	if(preg_match('/^([0-9\.]+)[[:space:]]+([0-9a-f:]+)[[:space:]]+(.+)$/', $scan, $matches) !== 1) {
-		continue;
-	}
-	
-	$ip = $matches[1];
-	$mac = $matches[2];
-	$desc = $matches[3];
-	
-	echo "Found device with mac address $mac ($desc) and ip $ip\n";
 }?>
 
 <!DOCTYPE html>
@@ -105,10 +83,10 @@ foreach($arp_scan as $scan) {
 							192.168.1.2
 						</td>
 						<td>
-							http://tomcat.lan/
+							http://home.lan/
 						</td>
 						<td>
-							Web Server
+							Home Deployment Server
 						</td>
 					</tr>
 					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='http://jenkins.lan:8080/';">
@@ -133,10 +111,10 @@ foreach($arp_scan as $scan) {
 							192.168.1.4
 						</td>
 						<td>
-							http://home.lan/
+							http://test.lan/
 						</td>
 						<td>
-							Home Server
+							Test Deployment Server
 						</td>
 					</tr>
 					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='http://selfservice.lan/';">
@@ -150,35 +128,35 @@ foreach($arp_scan as $scan) {
 							http://selfservice.lan/
 						</td>
 						<td>
-							Service Server
+							Self Service Server
 						</td>
 					</tr>
-					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='http://ldap.lan/';">
+					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='';">
 						<td>
-							ldp-01
+							web-05
 						</td>
 						<td>
 							192.168.1.6
 						</td>
 						<td>
-							http://ldap.lan/
+							none
 						</td>
 						<td>
-							LDAP Server
+							Automation Deployment Webserver
 						</td>
 					</tr>
-					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='http://awx.lan/';">
+					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='';">
 						<td>
-							ans-01
+							web-06
 						</td>
 						<td>
 							192.168.1.7
 						</td>
 						<td>
-							http://awx.lan/
+							none
 						</td>
 						<td>
-							Ansible Server
+							Automation Deployment Webserver
 						</td>
 					</tr>
 					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='http://zabbix.lan/';">
@@ -193,6 +171,77 @@ foreach($arp_scan as $scan) {
 						</td>
 						<td>
 							Monitoring Server
+						</td>
+					</tr>
+					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='http://awx.lan/';">
+						<td>
+							ans-01
+						</td>
+						<td>
+							192.168.1.11
+						</td>
+						<td>
+							http://awx.lan/
+						</td>
+						<td>
+							Ansible/AWX Server
+						</td>
+					</tr>
+					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='http://ldap.lan/';">
+						<td>
+							ldp-01
+						</td>
+						<td>
+							192.168.1.12
+						</td>
+						<td>
+							http://ldap.lan/
+						</td>
+						<td>
+							LDAP Server
+						</td>
+					</tr>
+					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='';">
+						<td>
+							elk-01
+						</td>
+						<td>
+							192.168.1.13
+						</td>
+						<td>
+							none
+						</td>
+						<td>
+							ELKstack Server
+						</td>
+					</tr>
+					</tr>
+					<tr style='cursor: pointer; cursor: hand;' onclick="window.location='';">
+						<td>
+							sec-01
+						</td>
+						<td>
+							192.168.1.14
+						</td>
+						<td>
+							none
+						</td>
+						<td>
+							OpenVAS Server
+						</td>
+					</tr>
+			                <tr style='cursor: pointer; cursor: hand;' onclick="window.location='';">
+						<td>
+							sec-02
+						</td>
+						<td>
+							192.168.1.15
+						</td>
+						<td>
+							none
+						</td>
+						<td>
+							Wazuh Server
 						</td>
 					</tr>
 				</tbody>
